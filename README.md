@@ -28,27 +28,20 @@ npm run dev
 
 3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Deployment to Vercel (No GitHub Required!)
+## Deployment to Vercel
 
-**Super Easy 3-Step Process:**
+**Option 1: Via GitHub (Recommended)**
+1. Push to GitHub (see `GITHUB_DEPLOY.md` for details)
+2. Import repo on [vercel.com](https://vercel.com)
+3. Add Storage → Create Database → KV
+4. Done!
 
-1. Install Vercel CLI:
-```bash
-npm i -g vercel
-```
+**Option 2: Via CLI (No GitHub)**
+1. `npm i -g vercel`
+2. `vercel login && vercel`
+3. Add Storage → Create Database → KV
 
-2. Login and deploy:
-```bash
-vercel login
-vercel
-```
-
-3. Add storage (one-time):
-   - Go to your project on vercel.com
-   - Click **Storage** → **Create Database** → **KV**
-   - Create it and it auto-links!
-
-That's it! Your poll is live. See `DEPLOY.md` for detailed instructions.
+See `DEPLOY.md` or `GITHUB_DEPLOY.md` for detailed instructions.
 
 **Note:** The app automatically uses file storage locally and Vercel KV when deployed. No configuration needed!
 
